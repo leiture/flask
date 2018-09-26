@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% for item in list %}
+        {% if loop.index == 1 %}
+            <li style="background-color: cyan">{{ item.value }}</li>
+        {% elif loop.index ==2 %}
+            <li style="background-color: cyan">{{ item.value }}</li>
+        {% elif loop.index ==3 %}
+            <li style="background-color: cyan">{{ item.value }}</li>
+        {% elif loop.index ==4 %}
+            <li style="background-color: cyan">{{ item.value }}</li>
+        {% elif loop.index ==5 %}
+            <li style="background-color: cyan">{{ item.value }}</li>
+
+        {% endif %}
+    {% endfor %}
+
+
+</body>
+</html>

